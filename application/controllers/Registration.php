@@ -22,7 +22,6 @@ class Registration extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->library('form_validation');
-		
 		$this->load->model('M_Registration');
 	}
 
@@ -34,10 +33,8 @@ class Registration extends CI_Controller {
         $this->form_validation->set_rules('Password','Password');
         
 		$data['account'] = $this->M_Registration->get_account();
-        $this->load->library('form_validation');    
-		$this->load->view('V_home',$data);
-            
-
+		$this->load->library('user',$data);
+		$this->user->Get_template($data);
 	}
 	
 	function save_data(){
