@@ -3,7 +3,7 @@
         <h1 class="h2">User Data</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
-            <a href="<?php echo base_url('Registration/save_data') ?>"><button type="button" class="btn btn-sm btn-outline-secondary">Tambah User Data</button></a>
+            <a href="<?php echo base_url('simpan/AlfianDorifMurtadlo/20081010251') ?>"><button type="button" class="btn btn-sm btn-outline-secondary">Tambah User Data</button></a>
           </div>
         </div>
       </div>
@@ -19,9 +19,9 @@
             <li class="list-group-item">Username  : <?php echo $data->Username ?></li>
             <li class="list-group-item">Tgl Dibuat  : <?php echo $data->date_created ?></li>
             <li class="list-group-item">
-              <a href="<?php echo base_url() ?>Registration/update_account/<?php echo $data->Username?>">UPDATE DATA</a> 
+              <a href="<?php echo base_url('Ubahdata/AlfianDorifMurtadlo/20081010251/'.$data->Username); ?>">UPDATE DATA</a> 
               OR 
-              <a href="<?php echo base_url(); ?>Registration/delete_account/<?php echo $data->Username?>">DELETE DATA</a>
+              <a href="<?php echo base_url('deletedata/AlfianDorifMurtadlo/20081010251/'.$data->Username); ?>">DELETE DATA</a>
             </li>
             
             

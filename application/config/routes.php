@@ -50,5 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'Registration';
+$route['simpan/(:any)/(:any)'] = 'Registration/save_data/$1/$2';
+$route['Ubahdata/(:any)/(:any)/(:any)'] = 'Registration/update_account/$1/$2/$3';
+$route['deletedata/(:any)/(:any)/(:any)'] = 'Registration/delete_account/$1/$2/$3';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

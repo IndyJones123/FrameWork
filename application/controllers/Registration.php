@@ -27,7 +27,7 @@ class Registration extends CI_Controller {
 
 
 
-	public function index()
+	public function index($nama =null, $npm = null)
 	{
 		$this->form_validation->set_rules('Username','Username');
         $this->form_validation->set_rules('Password','Password');
@@ -37,7 +37,7 @@ class Registration extends CI_Controller {
 		$this->user->Get_template($data);
 	}
 	
-	function save_data(){
+	function save_data($nama = null, $npm = null){
 		
 		$this->load->model('M_Registration');
 		$this->load->helper(array('form', 'url'));
@@ -60,12 +60,12 @@ class Registration extends CI_Controller {
                 else
                 {
 					$this->M_Registration->add_data();
-					redirect('Registration');
+					$this->index();
                 }
 
 	}
 
-	public function update_account($Username = null)
+	public function update_account($nama = null, $npm = null, $Username = null)
     {
         if ($this->input->post()) {
 			$data_account = $this->input->post();
@@ -77,7 +77,7 @@ class Registration extends CI_Controller {
         }
     }
 
-	public function delete_account($Username)
+	public function delete_account($nama = null, $npm = null ,$Username = null)
     {
         $this->M_Registration->delete_account($Username);
         redirect('Registration');

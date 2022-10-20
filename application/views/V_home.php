@@ -37,7 +37,7 @@
             <li class="list-group-item">
               <a href="<?php echo base_url() ?>Registration/update_account/<?php echo $data->Username?>">UPDATE DATA</a> 
               OR 
-              <a href="<?php echo base_url(); ?>Registration/delete_account/<?php echo $data->Username?>">DELETE DATA</a>
+              <a href="<?php echo base_url() ?>Registration/delete_account/<?php echo $data->Username?>">DELETE DATA</a>
             </li>
             
             

@@ -11,7 +11,7 @@
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div>
-				<form class="signup" method="POST" action="<?= base_url('Registration/save_data')?>" >
+				<form class="signup" method="POST" action="<?= base_url('simpan/AlfianDorifMurtadlo/20081010251')?>" >
 					<label for="chk" aria-hidden="true">Sign up</label>
 					<input type="text" name="Username" placeholder="User name" required=""> <p class="text-right"><small class="text-danger pl-3"><?= form_error('Username');?></small></p>
 					<input type="email" name="Email" placeholder="Email" required=""> <p class="text-right"><small class="text-danger pl-3"><?= form_error('Email');?></small></p>
